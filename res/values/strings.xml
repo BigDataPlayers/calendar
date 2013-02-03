@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Appointment Calendar</string>
+    <string name="app_name">Appointments Calendar</string>
     <string name="slot_name">Available Appointments</string>
+    <string-array name="provider_type">
+        <item>Physician</item>
+        <item>Surgeon</item>
+        <item>Dentist</item>
+        <item>Ophthalmologist</item>
+        <item>Optometrists</item>
+        <item>Physio Therapist</item>
+        <item>Chiropractor</item>
+    </string-array>
+
 </resources>
