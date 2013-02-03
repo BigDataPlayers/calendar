@@ -21,9 +21,8 @@ public class CalendarServer implements ResultProcessor {
             service = (CalendarService) Server.getInstance().getContext().getBean(input);
         }
         catch (Exception ex) {
-                System.out.println("Service no found");
-                return "<HTML>Invalid input URL verb: " + input +
-                        "</HTML>";
+//                System.out.println("Service not found");
+                return "<HTML>Invalid input URL verb: " + input + "</HTML>";
             }
         return service.toString();
     }

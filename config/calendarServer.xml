@@ -73,8 +73,6 @@
     </bean>
 
     <bean id="PersistenceManager" class="com.bdc.container.cache.persistence.FilePersistenceManager">
-        <constructor-arg value="C:/temp/timeslots.dat"/>
+        <constructor-arg value="./store/timeslots.dat"/>
     </bean>
-
-
 </beans>
