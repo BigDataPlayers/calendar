@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="bdc">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../bdc/out/artifacts/bdc/bdc.jar!/" />
+      <root url="file://$PROJECT_DIR$/../bdc/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/../bdc/lib" recursive="false" />
+  </library>
+</component>

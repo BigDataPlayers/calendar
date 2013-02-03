@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="ServiceList" class="com.bdc.container.bootstrap.ServiceList">
+        <property name="listServices">
+            <list>
+                <ref bean="CalendarServer"/>
+            </list>
+        </property>
+
+    </bean>
+
+    <bean id="mbeanServer" class="org.springframework.jmx.support.MBeanServerFactoryBean"></bean>
+
+    <bean id="exporter" class="org.springframework.jmx.export.MBeanExporter" lazy-init="false">
+        <property name="server" ref="mbeanServer"/>
+        <property name="autodetect" value="true"/>
+
+    </bean>
+
+    <bean id="CalendarServer" class="com.bdc.container.webservice.WebServer">
+        <property name="port" value="8080"/>
+        <property name="processor" ref="CalendarServerImpl"/>
+    </bean>
+    <bean id="CalendarServerImpl" class="com.agm.calendar.server.CalendarServer">
+    </bean>
+
+    <bean id="OfficeList" class="com.agm.calendar.server.service.OfficeService">
+        <property name="nameList">
+            <list value-type="java.lang.String">
+                <value>Office 1</value>
+                <value>Office 2</value>
+                <value>Office 3</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="ProviderList" class="com.agm.calendar.server.service.ProviderService">
+        <property name="nameList">
+            <list value-type="java.lang.String">
+                <value>Provider 1</value>
+                <value>Provider 2</value>
+                <value>Provider 3</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="OptionsList" class="com.agm.calendar.server.service.OptionsService">
+        <property name="nameList">
+            <list value-type="java.lang.String">
+                <value>Well Visit</value>
+                <value>Cleaning</value>
+                <value>root Canal</value>
+                <value>Filling</value>
+            </list>
+        </property>
+    </bean>
+
+</beans>
