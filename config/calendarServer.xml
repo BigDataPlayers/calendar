@@ -60,4 +60,21 @@
         </property>
     </bean>
 
+    <bean id="CacheList" class="com.bdc.container.cache.CacheList">
+        <property name="caches">
+            <list>
+                <ref bean="TimeSlots" />
+            </list>
+        </property>
+    </bean>
+    <bean id="TimeSlots" class="com.bdc.container.cache.Cache">
+        <property name="name" value="TimeSlotCache"/>
+        <property name="manager" ref="PersistenceManager" />
+    </bean>
+
+    <bean id="PersistenceManager" class="com.bdc.container.cache.persistence.FilePersistenceManager">
+        <constructor-arg value="C:/temp/timeslots.dat"/>
+    </bean>
+
+
 </beans>

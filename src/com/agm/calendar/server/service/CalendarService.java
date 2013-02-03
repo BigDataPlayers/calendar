@@ -12,12 +12,11 @@ import java.util.List;
  * To change this template use File | Settings | File Templates.
  */
 public abstract class CalendarService {
-    List<String> nameList = new LinkedList<String>() ;
+    List<String> nameList = new LinkedList<String>();
 
     public void setNameList(List<String> names) {
         System.out.println("Names: " + names);
-        for (String name : names)
-        {
+        for (String name : names) {
             nameList.add(name);
         }
     }
@@ -27,14 +26,15 @@ public abstract class CalendarService {
     }
 
     @Override
-    public String toString () {
+    public String toString() {
         StringBuffer list = new StringBuffer();
-        System.out.println("output: " + nameList);
         Iterator loop = nameList.iterator();
-        while (loop.hasNext()) {
-            list.append(loop.next()).append(",");
+        if (loop.hasNext()) {
+            list.append(loop.next());
+            while (loop.hasNext()) {
+                list.append(",").append(loop.next());
+            }
         }
-
         return list.toString();
     }
 
