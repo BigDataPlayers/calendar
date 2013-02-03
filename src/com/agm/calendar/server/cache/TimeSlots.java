@@ -1,6 +1,9 @@
 package com.agm.calendar.server.cache;
 
+import com.bdc.container.cache.CacheManager;
+
 import java.io.Serializable;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
@@ -16,6 +19,29 @@ public class TimeSlots implements Serializable{
     String provider;
     String office;
     String type;
+
+    public TimeSlots (String off,String provd,String type, Date date){
+        office = off ;
+        provider = provd;
+        this.type = type;
+        slot = date;
+
+        CacheManager.put("TimeSlots", getKey(), new ValueImpl(this));
+
+    }
+
+    public String getKey(){
+        StringBuffer buffer = new StringBuffer();
+        Calendar cal = Calendar.getInstance();
+        cal.setTime(slot);
+
+        buffer.append(office).append(provider).append(type)
+                .append(cal.get(Calendar.YEAR))
+                .append(cal.get(Calendar.MONTH))
+                .append(cal.get(Calendar.DAY_OF_MONTH));
+
+        return buffer.toString() ;
+    }
 
     public Date getSlot() {
         return slot;

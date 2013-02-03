@@ -54,7 +54,7 @@
             <list value-type="java.lang.String">
                 <value>Well Visit</value>
                 <value>Cleaning</value>
-                <value>root Canal</value>
+                <value>Root Canal</value>
                 <value>Filling</value>
             </list>
         </property>

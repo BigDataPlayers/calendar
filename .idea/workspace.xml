@@ -34,14 +34,15 @@
     <file path="/strings.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359822737789" ignored="false" />
     <file path="/AppointmentSlotMap.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359822960764" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/agm/calendar/androidClient/Manifest.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359823182328" ignored="false" />
-    <file path="/calendarServer.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359869963443" ignored="false" />
+    <file path="/calendarServer.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359871163057" ignored="false" />
     <file path="/Dummy.txt" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359859739089" ignored="false" />
     <file path="/CalendarServer.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359868678377" ignored="false" />
     <file path="/CalendarService.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359870803513" ignored="false" />
     <file path="/OfficeService.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359867561601" ignored="false" />
     <file path="/KeyImpl.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359870192016" ignored="false" />
-    <file path="/TimeSlots.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359870544447" ignored="false" />
+    <file path="/TimeSlots.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359872251975" ignored="false" />
     <file path="/ValueImpl.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359870506121" ignored="false" />
+    <file path="$PROJECT_DIR$/../bdc/src/com/bdc/container/cache/CacheManager.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359871447090" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +105,7 @@
       <file leaf-file-name="calendarServer.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/calendarServer.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="68" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0">
+            <state line="69" column="23" selection-start="2436" selection-end="2445" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -128,10 +129,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TimeSlots.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="TimeSlots.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/cache/TimeSlots.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="46" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+            <state line="42" column="32" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-0.7033399">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -159,10 +160,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarService.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CalendarService.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/service/CalendarService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="44" selection-start="868" selection-end="868" vertical-scroll-proportion="0.5658153">
+            <state line="33" column="44" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#359#367#0" expanded="true" />
@@ -200,11 +201,11 @@
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/service/ProviderService.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/service/OfficeService.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/CalendarServer.java" />
-        <option value="$PROJECT_DIR$/config/calendarServer.xml" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/cache/KeyImpl.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/cache/ValueImpl.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/server/cache/TimeSlots.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/server/service/CalendarService.java" />
+        <option value="$PROJECT_DIR$/config/calendarServer.xml" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/server/cache/TimeSlots.java" />
       </list>
     </option>
   </component>
@@ -592,7 +593,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24958263" sideWeight="0.6723096" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32769045" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297162" sideWeight="0.6723096" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297162" sideWeight="0.6723096" order="2" side_tool="false" content_ui="tabs" />
@@ -746,13 +747,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/calendarServer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="68" selection-start="2409" selection-end="2409" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/cache/KeyImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="37" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0">
@@ -767,21 +761,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/cache/TimeSlots.java">
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/service/CalendarService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="46" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0">
+        <state line="33" column="44" selection-start="868" selection-end="868" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#359#367#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/service/CalendarService.java">
+    <entry file="file://$PROJECT_DIR$/config/calendarServer.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="44" selection-start="868" selection-end="868" vertical-scroll-proportion="0.5658153">
+        <state line="69" column="23" selection-start="2436" selection-end="2445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/server/cache/TimeSlots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="32" selection-start="1106" selection-end="1106" vertical-scroll-proportion="-0.7033399">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#359#367#0" expanded="true" />
           </folding>
         </state>
       </provider>
