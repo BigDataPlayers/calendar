@@ -2,6 +2,7 @@
 <resources>
     <string name="app_name">Appointments Calendar</string>
     <string name="slot_name">Available Appointments</string>
+    <string name="setup_options">Select a Provider</string>
     <string-array name="provider_type">
         <item>Physician</item>
         <item>Surgeon</item>
