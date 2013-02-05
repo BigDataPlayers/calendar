@@ -9,14 +9,18 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:paddingLeft="35sp"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textColor="#ffd108"
+        android:textSize="18dp"
+        android:paddingLeft="40sp"
+        android:textAppearance="?android:attr/textAppearanceMedium" android:typeface="serif"/>
 
     <TextView
         android:id="@+id/childItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
+        android:textColor="#a3ff10"
+        android:textSize="15dp"
         android:layout_toRightOf="@id/sequence"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium" android:typeface="serif"/>
 </RelativeLayout>

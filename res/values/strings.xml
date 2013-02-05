@@ -4,6 +4,7 @@
     <string name="slot_name">Available Appointments</string>
     <string name="setup_options">Select a Provider</string>
     <string-array name="provider_type">
+        <item>Type of Provider</item>
         <item>Physician</item>
         <item>Surgeon</item>
         <item>Dentist</item>
