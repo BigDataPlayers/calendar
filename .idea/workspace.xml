@@ -35,15 +35,15 @@
     <list default="true" id="3e9b51b5-e461-4593-9c75-6ccba96f4f80" name="Default" comment="" />
     <ignored path="calendar.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/fragment.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359992789421" ignored="false" />
+    <file path="/fragment.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360186094046" ignored="false" />
     <file path="/MyActivity.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359826015300" ignored="false" />
     <file path="/AppointmentCalendar.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360118012399" ignored="false" />
-    <file path="/AndroidManifest.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359992823078" ignored="false" />
+    <file path="/AndroidManifest.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360184769640" ignored="false" />
     <file path="/strings.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360119272272" ignored="false" />
     <file path="/AppointmentSlotMap.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359822960764" ignored="false" />
     <file path="$PROJECT_DIR$/gen/com/agm/calendar/androidClient/Manifest.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359823182328" ignored="false" />
     <file path="/calendarServer.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359917763925" ignored="false" />
-    <file path="/Dummy.txt" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360030482450" ignored="false" />
+    <file path="/Dummy.txt" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360185855140" ignored="false" />
     <file path="/CalendarServer.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359868678377" ignored="false" />
     <file path="/CalendarService.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359870803513" ignored="false" />
     <file path="/OfficeService.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1359867561601" ignored="false" />
@@ -54,9 +54,19 @@
     <file path="/AppointmentSetup.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360032351309" ignored="false" />
     <file path="/elections.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360032319262" ignored="false" />
     <file path="/providerrows.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360032761226" ignored="false" />
-    <file path="/AppointmentView.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360119008083" ignored="false" />
+    <file path="/AppointmentView.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360182374156" ignored="false" />
     <file path="/CalendarDatePick.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360118433127" ignored="false" />
     <file path="/CalendarMonthView.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360119061165" ignored="false" />
+    <file path="/CalendarConstants.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360175706390" ignored="false" />
+    <file path="/main.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360182654890" ignored="false" />
+    <file path="/SlotViewAdapter.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360187172890" ignored="false" />
+    <file path="/MainActivity.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360187501046" ignored="false" />
+    <file path="/slots.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360183545843" ignored="false" />
+    <file path="$PROJECT_DIR$/gen/com/agm/calendar/androidClient/R.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360184795875" ignored="false" />
+    <file path="$PROJECT_DIR$/../android-calendar-view/src/com/infteh/calendarview/AppointmentView.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360185896656" ignored="false" />
+    <file path="$PROJECT_DIR$/../android-calendar-view/src/com/infteh/calendarview/MainActivity.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360187631078" ignored="false" />
+    <file path="$PROJECT_DIR$/../android-calendar-view/src/com/infteh/calendarview/SlotViewAdapter.java" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360187192593" ignored="false" />
+    <file path="$PROJECT_DIR$/../android-calendar-view/res/layout/slots.xml" changelist="3e9b51b5-e461-4593-9c75-6ccba96f4f80" time="1360187365656" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +81,6 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -106,6 +115,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -117,19 +127,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CalendarDatePick.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarDatePick.java">
+      <file leaf-file-name="AppointmentBooking.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentBooking.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+            <state line="43" column="0" selection-start="1358" selection-end="1612" vertical-scroll-proportion="0.4212766">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CalendarMonthView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarMonthView.java">
+      <file leaf-file-name="SlotViewAdapter.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/SlotViewAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="124" column="77" selection-start="2772" selection-end="2783" vertical-scroll-proportion="0.0">
+            <state line="32" column="52" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,68 +147,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="strings.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <file leaf-file-name="AppointmentSetup.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentSetup.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="55" selection-start="847" selection-end="847" vertical-scroll-proportion="0.8242424">
+            <state line="242" column="84" selection-start="9153" selection-end="9153" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppointmentView.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/AppointmentView.java">
+      <file leaf-file-name="AppointmentCalendar.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentCalendar.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="72" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Adapter.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$USER_HOME$/Downloads/adt-bundle-windows-x86_64/adt-bundle-windows-x86_64/sdk/platforms/android-17/android.jar!/android/widget/Adapter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="91" selection-start="244" selection-end="713" vertical-scroll-proportion="0.0">
+            <state line="28" column="41" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DateHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/DateHelper.java">
+      <file leaf-file-name="calenderandslots.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/calenderandslots.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocaleHelper.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/LocaleHelper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+            <state line="13" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="-8.84">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MainActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
+          <provider editor-type-id="android-designer">
+            <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MonthPagerAdapter.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MonthPagerAdapter.java">
+      <file leaf-file-name="CalendarView.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+            <state line="15" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -214,30 +196,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/elections.xml" />
-        <option value="$PROJECT_DIR$/res/layout/providerrows.xml" />
-        <option value="$PROJECT_DIR$/res/layout/officeheaders.xml" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentCalendar.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarAdapter.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarConstants.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarDatePickerDialog.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarView.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/DateHelper.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/LocaleHelper.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MainActivity.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MonthPagerAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarDatePick.java" />
-        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/AppointmentView.java" />
         <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarMonthView.java" />
         <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarConstants.java" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarView.java" />
+        <option value="$PROJECT_DIR$/res/layout/main.xml" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/AppointmentView.java" />
+        <option value="$PROJECT_DIR$/res/layout/slots.xml" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/SlotViewAdapter.java" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MainActivity.java" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/AppointmentBooking.java" />
+        <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentBooking.java" />
+        <option value="$PROJECT_DIR$/res/layout/calenderandslots.xml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1928" />
+    <option name="height" value="1058" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -265,6 +247,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -279,7 +262,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -289,7 +272,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -307,7 +290,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -329,7 +312,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -355,7 +338,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -373,7 +356,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -391,7 +374,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="calendar" />
+              <option name="myItemId" value="Calendar" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -402,7 +385,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,16 +395,23 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="reference.projectsettings.compiler.excludes" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/adt-bundle-windows-x86_64/adt-bundle-windows-x86_64/sdk/extras/android/support/v4/android-support-v4.jar!/" />
-    <property name="AndroidLayoutSelectedEditor" value="android-designer" />
+    <property name="last_opened_file_path" value="C:/adt-bundle-windows-x86/sdk/extras/android/support/v4/android-support-v4.jar!/" />
+    <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="emulator-5554" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="AVD_for_10_1in_WXGA_Tablet" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.agm.calendar.androidClient" />
+    </key>
   </component>
   <component name="RunManager" selected="Android Application.calendar_android">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -456,6 +445,19 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -481,19 +483,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -565,16 +554,16 @@
     <configuration default="false" name="calendar_android" type="AndroidRunConfigurationType" factoryName="Android Application">
       <module name="calendar_android" />
       <option name="ACTIVITY_CLASS" value="com.agm.calendar.androidClient.AppointmentSetup" />
-      <option name="MODE" value="specific_activity" />
+      <option name="MODE" value="default_activity" />
       <option name="DEPLOY" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="PREFERRED_AVD" value="AVD_for_Nexus_7_by_Google" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
       <option name="COMMAND_LINE" value="" />
       <option name="WIPE_USER_DATA" value="false" />
       <option name="DISABLE_BOOT_ANIMATION" value="false" />
       <option name="NETWORK_SPEED" value="full" />
       <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="CLEAR_LOGCAT" value="true" />
       <RunnerSettings RunnerId="AndroidDebugRunner" />
       <ConfigurationWrapper RunnerId="AndroidDebugRunner" />
       <method />
@@ -658,11 +647,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-4" y="-4" width="1928" height="1058" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4237013" sideWeight="0.6749703" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873377" sideWeight="0.6749703" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.42369264" sideWeight="0.5480663" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5480663" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297162" sideWeight="0.6711004" order="4" side_tool="false" content_ui="tabs" />
@@ -672,14 +661,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32740214" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4519573" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23314917" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4519337" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32928178" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24068071" sideWeight="0.6725979" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32426035" sideWeight="0.99837923" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.16488793" sideWeight="0.5480663" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3237569" sideWeight="0.99837923" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32858837" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -747,7 +736,35 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/layout/calendar_orig.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="13" selection-start="387" selection-end="387" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="50" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/adt-bundle-windows-x86/sdk/platforms/android-17/android.jar!/android/content/Context.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="41" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MonthPagerAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="138" column="46" selection-start="3947" selection-end="3947" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/slotmap.xml">
       <provider editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
@@ -757,119 +774,83 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentCalendar.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/calendar_view.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="47" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
+        <state line="2" column="16" selection-start="149" selection-end="149" vertical-scroll-proportion="0.0764045">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="48" selection-start="508" selection-end="508" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarConstants.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/calenderandslots.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+        <state line="13" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="-8.84">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarDatePickerDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="304" selection-end="304" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2219#2506#0" expanded="true" />
-            <element signature="e#2501#2502#0" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="122" selection-end="122" vertical-scroll-proportion="0.0">
+        <state line="15" column="13" selection-start="368" selection-end="368" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/DateHelper.java">
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentSetup.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/LocaleHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="53" selection-end="53" vertical-scroll-proportion="0.0">
+        <state line="242" column="84" selection-start="9153" selection-end="9153" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/res/layout/slots.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
+        <state line="15" column="35" selection-start="538" selection-end="538" vertical-scroll-proportion="0.5730337">
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/MonthPagerAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="95" selection-end="95" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarDatePick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="7" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/adt-bundle-windows-x86_64/adt-bundle-windows-x86_64/sdk/platforms/android-17/android.jar!/android/widget/Adapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="91" selection-start="244" selection-end="713" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/Downloads/adt-bundle-windows-x86_64/adt-bundle-windows-x86_64/sdk/platforms/android-17/android.jar!/android/widget/ListAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="17" selection-start="161" selection-end="161" vertical-scroll-proportion="0.10678392">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/AppointmentView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="72" column="0" selection-start="1956" selection-end="1956" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/CalendarMonthView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="124" column="77" selection-start="2772" selection-end="2783" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
+      <provider editor-type-id="android-designer">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="55" selection-start="847" selection-end="847" vertical-scroll-proportion="0.8242424">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="19" selection-start="877" selection-end="877" vertical-scroll-proportion="0.79574466">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentCalendar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="41" selection-start="997" selection-end="997" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/calendarView/SlotViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="52" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/agm/calendar/androidClient/AppointmentBooking.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="0" selection-start="1358" selection-end="1612" vertical-scroll-proportion="0.4212766">
           <folding />
         </state>
       </provider>

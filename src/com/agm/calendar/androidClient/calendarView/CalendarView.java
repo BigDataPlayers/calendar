@@ -44,18 +44,12 @@ public class CalendarView extends LinearLayout {
 		super(context, attrs);
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 		inflater.inflate(R.layout.calendar_view, this, true);
-		//FIXME Вообще, искать сразу нельзя. Может быть null. Нужно искать в onFinishInflate.
 		pager = ((ViewPager) findViewById(R.id.calendar_view_pager));
 		adapter = new MonthPagerAdapter(inflater, pager);
 		pager.setAdapter(adapter);
 		pager.setCurrentItem(MonthPagerAdapter.INFINITE / 2);
 	}
 	
-	/**
-	 * Р—Р°СЂРµРіРёСЃС‚СЂРёСЂРѕРІР°С‚СЊ РЅРѕРІС‹Р№ РЅР°Р±Р»СЋРґР°С‚РµР»СЊ.
-	 * 
-	 * @param observer РќР°Р±Р»СЋРґР°С‚РµР»СЊ.
-	 */
 	public final void registerCalendarDatePickObserver(final CalendarDatePick observer) {
 		((MonthPagerAdapter) pager.getAdapter()).setPickObserver(observer);
 	}

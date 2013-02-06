@@ -18,4 +18,9 @@ public class CalendarConstants {
                     true, false, true, false, true, false,
                     true, false, true, false, true, false,
                     true, false, true, false, true, false} ;
+
+    public static final int SLOT_DURATION = 15; //minutes
+    public static final int SLOT_START = 9; //0-23
+    public static final int SLOT_COUNT = 48; //considering 9 to 9
+
 }

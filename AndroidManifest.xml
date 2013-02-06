@@ -20,6 +20,11 @@
             android:name=".AppointmentSetup"
             android:label="@string/setup_options"
             android:noHistory="true">
+        </activity>
+        <activity
+            android:name="AppointmentBooking"
+            android:label="@string/slot_name"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

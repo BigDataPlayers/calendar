@@ -4,18 +4,18 @@
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
+
     <view
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        class="com.infteh.calendarview.CalendarView"
+        class="com.agm.calendar.androidClient.calendarView.CalendarView"
         android:id="@+id/view"
         android:layout_gravity="center_horizontal|top"/>
 
-    <GridView
-        android:layout_width="fill_parent"
-        android:layout_height="200dp"
-        android:id="@+id/gridView"
-        android:layout_gravity="center"
-        android:layout_marginTop="50dp"/>
-
+    <!--<GridView-->
+    <!--android:layout_width="fill_parent"-->
+    <!--android:layout_height="200dp"-->
+    <!--android:id="@+id/gridView"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:layout_marginTop="50dp"/>-->
 </LinearLayout>
