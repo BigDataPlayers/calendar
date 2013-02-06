@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="fill_parent"
-              android:layout_height="fill_parent"
-        >
-    <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Hello World, MyActivity"
-            />
-</LinearLayout>
 
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.infteh.calendarview.CalendarView"
+        android:id="@+id/view"
+        android:layout_gravity="center_horizontal|top"/>
+
+    <GridView
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:id="@+id/gridView"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"/>
+
+</LinearLayout>

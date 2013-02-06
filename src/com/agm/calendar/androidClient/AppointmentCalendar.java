@@ -24,7 +24,7 @@ public class AppointmentCalendar extends Activity implements CalendarView.OnClic
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar);
+        setContentView(R.layout.calendar_orig);
         calView = (CalendarView) findViewById(R.id.calendarView);
         calView.setOnClickListener(this);
         calView.setShowWeekNumber(false);
