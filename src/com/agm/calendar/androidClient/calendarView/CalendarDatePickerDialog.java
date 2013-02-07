@@ -1,5 +1,6 @@
 package com.agm.calendar.androidClient.calendarView;
 
+import android.widget.Toast;
 import com.agm.calendar.androidClient.R;
 import android.app.AlertDialog;
 import android.content.Context;
@@ -69,7 +70,8 @@ public class CalendarDatePickerDialog extends AlertDialog implements OnDateChang
 			public void onDatePicked(CalendarAdapter.DayCell dayCell) {
 				Calendar picked = dayCell.getDate();
 				mCallBack.onDateSet(mCalendarMonthView, picked.get(Calendar.YEAR), picked.get(Calendar.MONTH), picked.get(Calendar.DAY_OF_MONTH));
-				dismiss();
+                show();
+//				dismiss();
 			}
 		});
 	}

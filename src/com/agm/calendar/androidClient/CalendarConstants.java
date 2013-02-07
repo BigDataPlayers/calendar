@@ -1,4 +1,4 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient;
 
 
 
@@ -23,7 +23,7 @@ public class CalendarConstants {
 //    public static final int SLOT_START = 9; //0-23
 //    public static final int SLOT_COUNT = 48; //considering 9 to 9
 
-    public static final int SLOT_DURATION = 30; //minutes
+    public static final int SLOT_DURATION = 15; //minutes
     public static final int SLOT_START = 9; //0-23
     public static final int SLOT_COUNT = 24; //considering 9 to 9
 

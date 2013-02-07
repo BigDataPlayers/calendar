@@ -1,20 +1,20 @@
 package com.agm.calendar.androidClient.calendarView;
 
+import android.app.Activity;
+import android.view.ViewParent;
+import android.widget.*;
+import com.agm.calendar.androidClient.AppointmentBooking;
 import com.agm.calendar.androidClient.R;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Locale;
 
 import android.content.Context;
 
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.ArrayAdapter;
-import android.widget.GridView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
 /**
  * one month view.
@@ -42,21 +42,12 @@ public class CalendarMonthView extends LinearLayout {
 	 */
 	private Context mContext;
 
-	/**
-	 * Конструктор.
-	 * 
-	 * @param context контекст
-	 */
+
 	public CalendarMonthView(final Context context) {
 		this(context, null);
 	}
 
-	/**
-	 * Конструктор.
-	 * 
-	 * @param context контекст
-	 * @param attrs атрибуты
-	 */
+
 	public CalendarMonthView(final Context context, final AttributeSet attrs) {
 		super(context, attrs);
 		mContext = context;
@@ -79,7 +70,29 @@ public class CalendarMonthView extends LinearLayout {
 		gridview.setOnItemClickListener(new OnItemClickListener() {
 			public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
 				if (v.getTag() != null) {
-					if (mObserver != null) {
+                    CalendarAdapter.DayCell cellClicked = (CalendarAdapter.DayCell) v.getTag();
+                    Calendar dateClicked = cellClicked.getDate();
+                    AppointmentBooking booking = (AppointmentBooking) mContext ;
+
+                    View gpView = booking.getParentView();
+
+//                    Object obj = findViewById(R.layout.calenderandslots);
+                    Object obj = v.getParent();
+
+                    TextView txtView = (TextView) gpView.findViewById(R.id.textView_slot)     ;
+                    GridView slotView = (GridView) gpView.findViewById(R.id.gridView_slot);
+                    Button button = (Button) gpView.findViewById(R.id.slot_select);
+                    txtView.setText("Please select a time slot for " +
+                                dateClicked.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault()) + " " +
+                                cellClicked.getDescr());
+                    slotView.setVisibility(View.VISIBLE);
+                    button.setVisibility(View.VISIBLE);
+
+//                    Toast.makeText(mContext, "Cell Clicked..."
+//                            + dateClicked.getDisplayName(Calendar.MONTH, Calendar.LONG, Locale.getDefault())
+//                            +"/" + cellClicked.getDescr() ,
+//                            Toast.LENGTH_SHORT).show();
+                    if (mObserver != null) {
 						mObserver.onDatePicked((CalendarAdapter.DayCell) v.getTag());
 					}
 				}
@@ -167,20 +180,12 @@ public class CalendarMonthView extends LinearLayout {
 		initMonthCaption();
 	}
 
-	/**
-	 * Зарегистрировать новый наблюдатель.
-	 * 
-	 * @param observer Наблюдатель.
-	 */
+
 	public final void registerCalendarDatePickObserver(final CalendarDatePick observer) {
 		this.mObserver = observer;
 	}
 
-	/**
-	 * Разрегистрировать новый наблюдатель.
-	 * 
-	 * @param observer Наблюдатель.
-	 */
+
 	public final void unregisterCalendarDatePickObserver() {
 		this.mObserver = null;
 	}

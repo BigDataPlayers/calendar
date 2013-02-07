@@ -4,7 +4,6 @@ import android.view.View;
 import android.widget.*;
 import android.app.Activity;
 import android.os.Bundle;
-import com.agm.calendar.androidClient.calendarView.CalendarConstants;
 import com.agm.calendar.androidClient.calendarView.SlotViewAdapter;
 
 import java.text.SimpleDateFormat;
@@ -22,20 +21,32 @@ import java.util.Date;
 public class AppointmentBooking extends Activity {
 
     GridView gridView;
+    Button selectButton;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calenderandslots);
+
         String [] slotsDesc = createSlotText();
 
         gridView = (GridView) findViewById(R.id.gridView_slot);
+        selectButton = (Button) findViewById(R.id.slot_select);
+        gridView.setVisibility(View.GONE);
+        selectButton.setVisibility(Button.GONE);
 
         gridView.setAdapter(new SlotViewAdapter(this, slotsDesc));
-
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
-                Toast.makeText(getApplicationContext(), ((RadioButton) v.findViewById(R.id.grid_item_radio))
-                                .getText(), Toast.LENGTH_SHORT).show();
+//                System.out.println("RadioButton Clicked..." + ((RadioButton) v.findViewById(R.id.grid_item_radio)).getText());
+//                Toast.makeText(getApplicationContext(), ((RadioButton) v.findViewById(R.id.grid_item_radio)).getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        selectButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                System.out.println("Select button's parent:" + view.getParent());
             }
         });
 
@@ -64,7 +75,7 @@ public class AppointmentBooking extends Activity {
             from = format.format(startDate);
             to = format.format(endDate);
             slots[i] = from + " - " + to ;
-            System.out.println("New Slot:" + slots[i]);
+//            System.out.println("New Slot:" + slots[i]);
 
             startTime = endTime;
             startDate.setTime(startTime);
@@ -72,5 +83,9 @@ public class AppointmentBooking extends Activity {
         }
 
         return slots;
+    }
+
+    public View getParentView(){
+        return findViewById(R.id.calendarandslots) ;
     }
 }

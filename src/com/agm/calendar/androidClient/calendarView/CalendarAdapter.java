@@ -1,7 +1,9 @@
 package com.agm.calendar.androidClient.calendarView;
 
+import com.agm.calendar.androidClient.CalendarConstants;
 import com.agm.calendar.androidClient.R;
 import java.util.Calendar;
+import java.util.Date;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -112,7 +114,7 @@ public class CalendarAdapter extends BaseAdapter {
 		} else if (mCurrentDay != null && DateHelper.equalsIgnoreTime(mCurrentDay.getTime(), dayCell.mDate.getTime())) {
 			currentView.setBackgroundResource(R.drawable.calendar_item_background_current);
 		} else {
-			if (isCurrentMonth && CalendarConstants.isAppointmentsAvailable [dayCell.getDayofMonth()]) {
+			if (isCurrentMonth && CalendarConstants.isAppointmentsAvailable [dayCell.getDayofMonth()] && DateHelper.dateMoreOrEqual(dayCell.mDate.getTime(), new Date())) {
 				currentView.setBackgroundResource(R.drawable.list_item_background);
 			} else {
 				currentView.setBackgroundResource(R.drawable.calendar_notcurrentmonth_item_selector);

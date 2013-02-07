@@ -35,12 +35,7 @@ public class CalendarView extends LinearLayout {
 		this(context, null);
 	}
 
-	/**
-	 * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ.
-	 * 
-	 * @param context РєРѕРЅС‚РµРєСЃС‚
-	 * @param attrs Р°С‚СЂРёР±СѓС‚С‹
-	 */
+
 	public CalendarView(final Context context, final AttributeSet attrs) {
 		super(context, attrs);
 		LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);

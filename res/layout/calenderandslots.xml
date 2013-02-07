@@ -1,25 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="horizontal"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:columnCount="1"
-              android:rowCount="2">
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/calendarandslots"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <view
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        class="com.agm.calendar.androidClient.calendarView.CalendarView"
+        android:id="@+id/view"
+        android:layout_gravity="center|top"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please pick an available date from the caledar above -"
+        android:id="@+id/textView_slot"
+        android:paddingStart="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="228dp"/>
+
+    <GridView
+        android:layout_width="wrap_content"
+        android:layout_height="456dp"
+        android:id="@+id/gridView_slot"
+        android:numColumns="3"
+        android:fastScrollAlwaysVisible="false"
+        android:layout_gravity="top"
+        android:layout_alignLeft="@+id/view"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="367dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select"
+        android:id="@+id/slot_select"
+        android:layout_gravity="center|top"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="855dp"/>
+
+    <GridLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/gridView_headers"
+        android:focusable="false"
+        android:numColumns="3"
+        android:layout_alignLeft="@+id/textView_slot"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="300dp">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            class="com.agm.calendar.androidClient.calendarView.CalendarView"
-            android:id="@+id/view"
-            android:layout_gravity="center|top"/>
-    <GridView
-            android:layout_width="wrap_content"
-            android:layout_height="300dp"
-            android:id="@+id/gridView_slot"
-            android:layout_row="1"
-            android:layout_column="0"
-            android:fastScrollAlwaysVisible="false"
-            android:layout_gravity="top"/>
+            android:text="Morning Session"
+            android:id="@+id/textView"
+            android:layout_alignLeft="@+id/textView_slot"
+            android:layout_alignBottom="@+id/gridView_headers"/>
 
-</GridLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Afternoon Session"
+            android:id="@+id/textView"
+            android:layout_alignLeft="@+id/textView_slot"
+            android:layout_alignBottom="@+id/gridView_headers"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Evening Session"
+            android:id="@+id/textView"
+            android:layout_alignLeft="@+id/textView_slot"
+            android:layout_alignBottom="@+id/gridView_headers"/>
+    </GridLayout>
+</RelativeLayout>
