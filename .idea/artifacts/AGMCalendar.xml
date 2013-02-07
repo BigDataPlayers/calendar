@@ -1,9 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="AGMCalendar">
-    <output-path>$PROJECT_DIR$/out/artifacts/AGMCalendar</output-path>
-    <root id="archive" name="AGMCalendar.jar">
-      <element id="extracted-dir" path="$PROJECT_DIR$/../bdc/out/artifacts/bdc/bdc.jar" path-in-jar="/" />
-      <element id="module-output" name="calendar_server" />
-    </root>
-  </artifact>
-</component>

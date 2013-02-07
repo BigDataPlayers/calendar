@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="bdcContainer">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/../bdc/out/artifacts/bdc/bdc.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
