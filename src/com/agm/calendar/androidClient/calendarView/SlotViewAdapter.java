@@ -29,13 +29,14 @@ public class SlotViewAdapter extends BaseAdapter {
 
         View gridView ;
 
-        if (convertView == null) {
+//        if (convertView == null) {
             gridView = inflater.inflate(R.layout.slots, null);
             RadioButton button = (RadioButton) gridView.findViewById(R.id.grid_item_radio);
             button.setText(slotValues[position]);
-        } else {
-            gridView = convertView ;
-        }
+            System.out.println("Completed Radio Button:" + slotValues[position]);
+//        } else {
+//            gridView = convertView ;
+//        }
 
         return gridView;
     }

@@ -11,7 +11,7 @@ import java.lang.reflect.Field;
 import java.util.Calendar;
 import java.util.Date;
 
-public class AppointmentCalendar extends Activity implements CalendarView.OnClickListener {
+public class AppointmentCalendar extends Activity implements com.agm.calendar.androidClient.calendarView.CalendarView.OnClickListener {
     /**
      * Called when the activity is first created.
      */

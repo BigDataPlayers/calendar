@@ -13,7 +13,7 @@ import android.os.Bundle;
 public class AppointmentSlotMap extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.slotmap);
+//        setContentView(R.layout.slotmap);
 
     }
 }

@@ -7,6 +7,10 @@ import android.os.Bundle;
 import com.agm.calendar.androidClient.calendarView.CalendarConstants;
 import com.agm.calendar.androidClient.calendarView.SlotViewAdapter;
 
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
 
 /**
  * Created with IntelliJ IDEA.
@@ -24,28 +28,47 @@ public class AppointmentBooking extends Activity {
         setContentView(R.layout.calenderandslots);
         String [] slotsDesc = createSlotText();
 
-//        gridView = (GridView) findViewById(R.id.gridView);
-//
-//        gridView.setAdapter(new SlotViewAdapter(this, slotsDesc));
-//
-//        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//            public void onItemClick(AdapterView<?> parent, View v,
-//                                    int position, long id) {
-//                Toast.makeText(
-//                        getApplicationContext(),
-//                        ((RadioButton) v.findViewById(R.id.grid_item_radio))
-//                                .getText(), Toast.LENGTH_SHORT).show();
-//
-//            }
-//        });
+        gridView = (GridView) findViewById(R.id.gridView_slot);
+
+        gridView.setAdapter(new SlotViewAdapter(this, slotsDesc));
+
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View v, int position, long id) {
+                Toast.makeText(getApplicationContext(), ((RadioButton) v.findViewById(R.id.grid_item_radio))
+                                .getText(), Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 
     private String[] createSlotText (){
         String [] slots = new String[CalendarConstants.SLOT_COUNT];
+        int slotStart = CalendarConstants.SLOT_START ;
+        long startTime, endTime ;
+        String from, to;
+        SimpleDateFormat format = new SimpleDateFormat("hh:mm aa");
 
-        for (int i=0; i <=CalendarConstants.SLOT_COUNT; i++ ){
-            slots[i] = "Slot #" + (i = 1) ;
+        Calendar startCal = Calendar.getInstance();
+
+        startCal.set(Calendar.HOUR_OF_DAY, slotStart);
+        startCal.set(Calendar.MINUTE, 0);
+        Date startDate = startCal.getTime();
+        Date endDate = new Date();
+
+        startTime = startCal.getTimeInMillis();
+
+        for (int i=0; i < CalendarConstants.SLOT_COUNT; i++ ){
+            endTime = startTime + (CalendarConstants.SLOT_DURATION *60*1000) ;
+            endDate.setTime(endTime);
+
+            from = format.format(startDate);
+            to = format.format(endDate);
+            slots[i] = from + " - " + to ;
+            System.out.println("New Slot:" + slots[i]);
+
+            startTime = endTime;
+            startDate.setTime(startTime);
+
         }
 
         return slots;

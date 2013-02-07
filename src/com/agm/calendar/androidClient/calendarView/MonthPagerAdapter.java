@@ -17,7 +17,7 @@ import android.widget.Toast;
  * @author Sazonov-adm
  * 
  */
-class MonthPagerAdapter extends PagerAdapter {
+public class MonthPagerAdapter extends PagerAdapter {
 
 	/**
 	 * max number of screens. 998 cause (998 mod 3) == 1
