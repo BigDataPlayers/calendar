@@ -1,11 +1,10 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.adapter;
 
 import com.agm.calendar.androidClient.R;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
-import java.util.Locale;
 
 
 import android.os.Parcelable;
@@ -13,7 +12,9 @@ import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.Toast;
+import com.agm.calendar.androidClient.helper.CalendarDatePick;
+import com.agm.calendar.androidClient.calendarView.CalendarMonthView;
+import com.agm.calendar.androidClient.helper.DateHelper;
 
 /**
  * @author Sazonov-adm

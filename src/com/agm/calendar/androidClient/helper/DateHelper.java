@@ -1,4 +1,4 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.helper;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -7,7 +7,7 @@ import java.util.GregorianCalendar;
 import java.util.TimeZone;
 import android.text.format.DateUtils;
 
-final class DateHelper {
+final public class DateHelper {
 	public static final String UTC_TIME_ZONE = "UTC";
 
 	public static final int YEAR1900 = 1900;

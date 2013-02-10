@@ -1,4 +1,4 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.helper;
 
 import android.content.Context;
 
@@ -7,7 +7,7 @@ import android.content.Context;
  * @author Sazonov-adm
  *
  */
-class LocaleHelper {
+public class LocaleHelper {
 	/**
 	 * is current locale - russian.
 	 * @param context context.

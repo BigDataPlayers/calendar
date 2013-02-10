@@ -4,7 +4,8 @@ import android.view.View;
 import android.widget.*;
 import android.app.Activity;
 import android.os.Bundle;
-import com.agm.calendar.androidClient.calendarView.SlotViewAdapter;
+import com.agm.calendar.androidClient.adapter.SlotViewAdapter;
+import com.agm.calendar.androidClient.helper.CalendarConstants;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -22,18 +23,32 @@ public class AppointmentBooking extends Activity {
 
     GridView gridView;
     Button selectButton;
+    String mProvider, mOffice, mVisitType;
+
+    public AppointmentBooking() {
+
+    }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calenderandslots);
+        Bundle bundle = getIntent().getExtras();
 
-        String [] slotsDesc = createSlotText();
+        mProvider = bundle.getString("PROVIDER");
+        mOffice = bundle.getString("OFFICE");
+        mVisitType = bundle.getString("VISIT_TYPE");
+
+        this.setTitle("Appointment for " + mVisitType + " with " + mProvider + " at " + mOffice);
+        String[] slotsDesc = createSlotText();
 
         gridView = (GridView) findViewById(R.id.gridView_slot);
         selectButton = (Button) findViewById(R.id.slot_select);
+        GridLayout gridHeader = (GridLayout) findViewById(R.id.gridView_headers);
+
         gridView.setVisibility(View.GONE);
         selectButton.setVisibility(Button.GONE);
+        gridHeader.setVisibility(GridLayout.GONE);
 
         gridView.setAdapter(new SlotViewAdapter(this, slotsDesc));
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -52,10 +67,10 @@ public class AppointmentBooking extends Activity {
 
     }
 
-    private String[] createSlotText (){
-        String [] slots = new String[CalendarConstants.SLOT_COUNT];
-        int slotStart = CalendarConstants.SLOT_START ;
-        long startTime, endTime ;
+    private String[] createSlotText() {
+        String[] slots = new String[CalendarConstants.SLOT_COUNT];
+        int slotStart = CalendarConstants.SLOT_START;
+        long startTime, endTime;
         String from, to;
         SimpleDateFormat format = new SimpleDateFormat("hh:mm aa");
 
@@ -68,24 +83,22 @@ public class AppointmentBooking extends Activity {
 
         startTime = startCal.getTimeInMillis();
 
-        for (int i=0; i < CalendarConstants.SLOT_COUNT; i++ ){
-            endTime = startTime + (CalendarConstants.SLOT_DURATION *60*1000) ;
+        for (int i = 0; i < CalendarConstants.SLOT_COUNT; i++) {
+            endTime = startTime + (CalendarConstants.SLOT_DURATION * 60 * 1000);
             endDate.setTime(endTime);
 
             from = format.format(startDate);
             to = format.format(endDate);
-            slots[i] = from + " - " + to ;
+            slots[i] = from + " - " + to;
 //            System.out.println("New Slot:" + slots[i]);
-
             startTime = endTime;
             startDate.setTime(startTime);
-
         }
 
         return slots;
     }
 
-    public View getParentView(){
-        return findViewById(R.id.calendarandslots) ;
+    public View getParentView() {
+        return findViewById(R.id.calendarandslots);
     }
 }

@@ -4,8 +4,10 @@ import android.app.Activity;
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.os.StrictMode;
+import android.text.Layout;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -39,6 +41,13 @@ public class AppointmentSetup extends Activity implements View.OnClickListener {
     private CalendarListAdapter listAdapter;
     private ExpandableListView expandableList;
     private ListView listV;
+    private String mProvider;
+    private String mOffice;
+    private String mVisitType ;
+    LinearLayout lastProvider;
+    RelativeLayout lastOffice ;
+    TextView lastVisit, visitLabel;
+    Button selectButton ;
 
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -51,19 +60,30 @@ public class AppointmentSetup extends Activity implements View.OnClickListener {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
-        //get provider details from the server
-        loadData();
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (i > 0 ){
+                    expandableList.setVisibility(View.VISIBLE);
+                }
+            }
 
-        //prepare listview for options
-        listV = (ListView) findViewById(R.id.optionList);
-        listV.setAdapter(new ArrayAdapter<String>(this, R.layout.visitoptions, optionsList));
-        listV.setTextFilterEnabled(true);
-        listV.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                // When clicked, show a toast with the TextView text
-                Toast.makeText(getApplicationContext(),((TextView) view).getText(), Toast.LENGTH_SHORT).show();
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+                //To change body of implemented methods use File | Settings | File Templates.
             }
         });
+
+//        spinner.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Spinner spnr = (Spinner) view;
+//                if (spnr.getSelectedItemPosition() > 0 ){
+//                    expandableList.setVisibility(View.VISIBLE);
+//                }
+//            }
+//        });
+        loadData();
 
         //get reference to the ExpandableListView
         expandableList = (ExpandableListView) findViewById(R.id.providerList);
@@ -71,12 +91,50 @@ public class AppointmentSetup extends Activity implements View.OnClickListener {
         listAdapter = new CalendarListAdapter(this, providerList);
         //attach the adapter to the list
         expandableList.setAdapter(listAdapter);
-
         //listener for child row click
         expandableList.setOnChildClickListener(providerItemClicked);
         //listener for group heading click
         expandableList.setOnGroupClickListener(officeItemClicked);
+        expandableList.setVisibility(View.GONE);
 
+        //prepare listview for options
+        visitLabel = (TextView) findViewById(R.id.textView_visitType);
+        visitLabel.setVisibility(TextView.GONE);
+
+        listV = (ListView) findViewById(R.id.optionList);
+        listV.setAdapter(new ArrayAdapter<String>(this, R.layout.visitoptions, optionsList));
+        listV.setTextFilterEnabled(true);
+        listV.setOnItemClickListener(new ListListener());
+        listV.setVisibility(View.GONE);
+
+        selectButton = (Button)findViewById(R.id.select_options);
+        selectButton.setOnClickListener(new SelectListener());
+        selectButton.setVisibility(Button.GONE);
+
+    }
+
+    public String getVisitType() {
+        return mVisitType;
+    }
+
+    public void setVisitType(String mVisitType) {
+        this.mVisitType = mVisitType;
+    }
+
+    public String getProvider() {
+        return mProvider;
+    }
+
+    public void setProvider(String mProvider) {
+        this.mProvider = mProvider;
+    }
+
+    public String getOffice() {
+        return mOffice;
+    }
+
+    public void setOffice(String mOffice) {
+        this.mOffice = mOffice;
     }
 
     private void loadData() {
@@ -211,11 +269,20 @@ public class AppointmentSetup extends Activity implements View.OnClickListener {
                                             int groupPosition, int childPosition, long id) {
 
                     //get the group header
-                    String headerInfo = providerList.get(groupPosition);
+                    mProvider = providerList.get(groupPosition);
                     //get the child info
-                    String detailInfo = officeList.get(childPosition);
+                    mOffice = officeList.get(childPosition);
                     //display it or do something with it
-                    Toast.makeText(getBaseContext(), "Clicked on Detail " + headerInfo + "/" + detailInfo, Toast.LENGTH_LONG).show();
+                    if (lastOffice != null) {
+                        lastOffice.setBackgroundColor(Color.TRANSPARENT);
+                    }
+                    lastOffice = (RelativeLayout) v;
+                    lastOffice.setBackgroundColor(Color.BLUE);
+                    Toast.makeText(getBaseContext(), "Clicked on Detail " + mProvider + "/" + mOffice, Toast.LENGTH_LONG).show();
+
+                    visitLabel.setVisibility(TextView.VISIBLE);
+                    listV.setVisibility(View.VISIBLE);
+
                     return false;
                 }
             };
@@ -226,25 +293,53 @@ public class AppointmentSetup extends Activity implements View.OnClickListener {
         public boolean onGroupClick(ExpandableListView parent, View v, int groupPosition, long id) {
 
             //get the group header
-            String headerInfo = providerList.get(groupPosition);
+            mProvider = providerList.get(groupPosition);
+            if (lastProvider != null) {
+                lastProvider.setBackgroundColor(Color.TRANSPARENT);
+            }
+            lastProvider = (LinearLayout) v ;
+            lastProvider.setBackgroundColor(Color.BLUE);
             //display it or do something with it
-            Toast.makeText(getBaseContext(), "Child on Header " + headerInfo, Toast.LENGTH_LONG).show();
-
+            Toast.makeText(getBaseContext(), "Child on Header " + mProvider, Toast.LENGTH_LONG).show();
             return false;
         }
     };
 
     public void onClick(View v) {
 
-        switch (v.getId()) {
+    }
 
-            //add entry to the List
-            case R.id.select:
-                Intent gotoNextActivity = new Intent(getApplicationContext(), AppointmentCalendar.class);
-                startActivity(gotoNextActivity);
-                break;
-            // More buttons go here (if any) ...
+    private class SelectListener implements View.OnClickListener {
+        @Override
+        public void onClick(View view) {
+            if (mProvider == null || mOffice == null || mVisitType == null) {
+                Toast.makeText(getApplicationContext(),
+                        "Provider, Office or Visit Type is not selected. Please select and click selectButton button",
+                        Toast.LENGTH_LONG).show();
+            } else {
+                Intent nextActivity = new Intent(getApplicationContext(), AppointmentBooking.class);
+                nextActivity.putExtra("PROVIDER", mProvider);
+                nextActivity.putExtra("OFFICE", mOffice);
+                nextActivity.putExtra("VISIT_TYPE", mVisitType);
+                startActivity(nextActivity);
+            }
         }
     }
 
+    private class ListListener implements AdapterView.OnItemClickListener {
+        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+            // When clicked, show a toast with the TextView text
+            if (lastVisit !=null ) {
+                lastVisit.setBackgroundColor(Color.TRANSPARENT);
+            }
+            lastVisit = (TextView) view;
+            mVisitType = (String) lastVisit.getText()  ;
+            lastVisit.setBackgroundColor(Color.BLUE);
+
+            Toast.makeText(getApplicationContext(), mVisitType, Toast.LENGTH_SHORT).show();
+//                #33050a
+
+            selectButton.setVisibility(Button.VISIBLE);
+        }
+    }
 }

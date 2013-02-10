@@ -1,4 +1,4 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;

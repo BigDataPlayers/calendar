@@ -7,6 +7,8 @@ import android.support.v4.view.ViewPager;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.widget.LinearLayout;
+import com.agm.calendar.androidClient.adapter.MonthPagerAdapter;
+import com.agm.calendar.androidClient.helper.CalendarDatePick;
 
 
 /**

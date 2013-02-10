@@ -1,4 +1,4 @@
-package com.agm.calendar.androidClient;
+package com.agm.calendar.androidClient.helper;
 
 
 

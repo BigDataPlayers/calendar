@@ -1,6 +1,6 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.adapter;
 
-import com.agm.calendar.androidClient.CalendarConstants;
+import com.agm.calendar.androidClient.helper.CalendarConstants;
 import com.agm.calendar.androidClient.R;
 import java.util.Calendar;
 import java.util.Date;
@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import com.agm.calendar.androidClient.helper.DateHelper;
 
 
 /**
@@ -49,7 +50,7 @@ public class CalendarAdapter extends BaseAdapter {
 	 * @param context context.
 	 * @param monthCalendar current month.
 	 */
-	protected CalendarAdapter(Context context, Calendar monthCalendar) {
+	public CalendarAdapter(Context context, Calendar monthCalendar) {
 		mToday = DateHelper.createCurrentBeginDayCalendar();
 		mCurrentMonth = (Calendar) monthCalendar.clone();
 		mContext = context;
@@ -88,6 +89,7 @@ public class CalendarAdapter extends BaseAdapter {
 		TextView dayViewTextView;
 
 		DayCell dayCell = days[position];
+        dayCell.setmAppointmentAvailable(true);
 		if (convertView == null) {
 			LayoutInflater vi = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			currentView = vi.inflate(R.layout.calendar_item, null);
@@ -114,10 +116,13 @@ public class CalendarAdapter extends BaseAdapter {
 		} else if (mCurrentDay != null && DateHelper.equalsIgnoreTime(mCurrentDay.getTime(), dayCell.mDate.getTime())) {
 			currentView.setBackgroundResource(R.drawable.calendar_item_background_current);
 		} else {
-			if (isCurrentMonth && CalendarConstants.isAppointmentsAvailable [dayCell.getDayofMonth()] && DateHelper.dateMoreOrEqual(dayCell.mDate.getTime(), new Date())) {
+			if (isCurrentMonth
+                    && CalendarConstants.isAppointmentsAvailable [dayCell.getDayofMonth()]
+                    && DateHelper.dateMoreOrEqual(dayCell.mDate.getTime(), new Date())) {
 				currentView.setBackgroundResource(R.drawable.list_item_background);
-			} else {
+            } else {
 				currentView.setBackgroundResource(R.drawable.calendar_notcurrentmonth_item_selector);
+                dayCell.setmAppointmentAvailable(false);
 			}
 		}
 		dayViewTextView.setText(dayCell.getDescr());
@@ -173,6 +178,7 @@ public class CalendarAdapter extends BaseAdapter {
 		 */
 		private String mDescription;
         private int mDayofMonth;
+        private boolean mAppointmentAvailable ;
 		/**
 		 * date.
 		 */
@@ -223,5 +229,14 @@ public class CalendarAdapter extends BaseAdapter {
 			DayCell otherA = (DayCell) other;
 			return (mDate.equals(otherA.mDate)) && ((mDate == null) ? otherA.mDate == null : mDate.equals(otherA.mDate));
 		}
-	}
+
+        public boolean ismAppointmentAvailable() {
+            return mAppointmentAvailable;
+        }
+
+        public void setmAppointmentAvailable(boolean mAppointmentAvailable) {
+            this.mAppointmentAvailable = mAppointmentAvailable;
+        }
+
+    }
 }

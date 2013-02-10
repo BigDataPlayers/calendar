@@ -1,11 +1,12 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.helper;
 
-import android.widget.Toast;
 import com.agm.calendar.androidClient.R;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.widget.DatePicker;
 import android.widget.DatePicker.OnDateChangedListener;
+import com.agm.calendar.androidClient.adapter.CalendarAdapter;
+import com.agm.calendar.androidClient.calendarView.CalendarView;
 
 import java.util.Calendar;
 import java.util.TimeZone;

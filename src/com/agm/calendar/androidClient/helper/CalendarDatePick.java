@@ -1,7 +1,7 @@
-package com.agm.calendar.androidClient.calendarView;
+package com.agm.calendar.androidClient.helper;
 
 
-import com.agm.calendar.androidClient.calendarView.CalendarAdapter.DayCell;
+import com.agm.calendar.androidClient.adapter.CalendarAdapter.DayCell;
 
 /**
  * listener.

@@ -33,19 +33,15 @@
         android:numColumns="3"
         android:fastScrollAlwaysVisible="false"
         android:layout_gravity="top"
-        android:layout_alignLeft="@+id/view"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="367dp"/>
+        android:layout_alignLeft="@+id/view" android:layout_below="@+id/gridView_headers"/>
 
     <Button
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="37dp"
         android:text="Select"
         android:id="@+id/slot_select"
         android:layout_gravity="center|top"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="855dp"/>
+        android:layout_centerHorizontal="true" android:layout_alignParentTop="true" android:layout_marginTop="763dp"/>
 
     <GridLayout
         android:layout_width="fill_parent"
@@ -53,34 +49,35 @@
         android:id="@+id/gridView_headers"
         android:focusable="false"
         android:numColumns="3"
-        android:layout_alignLeft="@+id/textView_slot"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="300dp">
+        android:layout_alignParentLeft="true" android:layout_below="@+id/textView_slot">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="Morning Session"
             android:id="@+id/textView"
             android:layout_alignLeft="@+id/textView_slot"
-            android:layout_alignBottom="@+id/gridView_headers"/>
+            android:layout_alignBottom="@+id/gridView_headers" android:typeface="normal" android:background="#e0e0e0"
+            android:gravity="center" android:textColor="#be561c"/>
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
             android:text="Afternoon Session"
             android:id="@+id/textView"
             android:layout_alignLeft="@+id/textView_slot"
-            android:layout_alignBottom="@+id/gridView_headers"/>
+            android:layout_alignBottom="@+id/gridView_headers" android:background="#e0e0e0" android:gravity="center"
+            android:textColor="#be561c"/>
 
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="195dp"
             android:layout_height="wrap_content"
             android:text="Evening Session"
             android:id="@+id/textView"
             android:layout_alignLeft="@+id/textView_slot"
-            android:layout_alignBottom="@+id/gridView_headers"/>
+            android:layout_alignBottom="@+id/gridView_headers" android:background="#e0e0e0" android:gravity="center"
+            android:textColor="#be561c"/>
     </GridLayout>
 </RelativeLayout>
