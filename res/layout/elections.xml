@@ -6,7 +6,7 @@
 
 
     <Spinner
-            android:layout_width="284dp"
+            android:layout_width="338dp"
             android:layout_height="50dp"
             android:id="@+id/providerType"
             android:spinnerMode="dropdown"

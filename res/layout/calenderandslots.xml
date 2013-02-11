@@ -80,4 +80,12 @@
             android:layout_alignBottom="@+id/gridView_headers" android:background="#e0e0e0" android:gravity="center"
             android:textColor="#be561c"/>
     </GridLayout>
+    <ImageButton
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:id="@+id/imageButton_fb"
+            android:src="@drawable/fb"
+            android:layout_alignParentEnd="false"
+            android:layout_alignParentLeft="true" android:layout_marginLeft="408dp"
+            android:layout_marginTop="760dp"/>
 </RelativeLayout>

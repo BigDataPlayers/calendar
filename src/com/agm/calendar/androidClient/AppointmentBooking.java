@@ -1,5 +1,7 @@
 package com.agm.calendar.androidClient;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.view.View;
 import android.widget.*;
 import android.app.Activity;
@@ -65,6 +67,14 @@ public class AppointmentBooking extends Activity {
             }
         });
 
+        ImageButton fb = (ImageButton) findViewById(R.id.imageButton_fb);
+        fb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("https://plus.google.com/106629310080483954246/about?gl=us&hl=en%3Fgl%3Dus"));
+                startActivity(browserIntent);
+            }
+        });
     }
 
     private String[] createSlotText() {
