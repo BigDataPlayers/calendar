@@ -88,4 +88,12 @@
             android:layout_alignParentEnd="false"
             android:layout_alignParentLeft="true" android:layout_marginLeft="408dp"
             android:layout_marginTop="760dp"/>
+    <ImageButton android:layout_width="42dp" android:layout_height="42dp" android:id="@+id/imageButton_yahoo"
+                 android:src="@drawable/yahoo" android:layout_alignParentEnd="false"
+                 android:layout_alignParentLeft="true" android:layout_marginLeft="470dp"
+                 android:layout_marginTop="760dp"/>
+    <ImageButton android:layout_width="42dp" android:layout_height="42dp" android:id="@+id/imageButton_yelp"
+                 android:src="@drawable/yelp" android:layout_alignParentEnd="false"
+                 android:layout_alignParentLeft="true" android:layout_marginLeft="530dp"
+                 android:layout_marginTop="760dp"/>
 </RelativeLayout>

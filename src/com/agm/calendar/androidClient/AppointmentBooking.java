@@ -68,13 +68,13 @@ public class AppointmentBooking extends Activity {
         });
 
         ImageButton fb = (ImageButton) findViewById(R.id.imageButton_fb);
-        fb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent browserIntent = new Intent("android.intent.action.VIEW", Uri.parse("https://plus.google.com/106629310080483954246/about?gl=us&hl=en%3Fgl%3Dus"));
-                startActivity(browserIntent);
-            }
-        });
+        fb.setOnClickListener(new BrowserLauncher("https://plus.google.com/106629310080483954246/about?gl=us&hl=en%3Fgl%3Dus"));
+
+        ImageButton yahoo = (ImageButton) findViewById(R.id.imageButton_fb);
+        fb.setOnClickListener(new BrowserLauncher("http://local.yahoo.com/details?id=88607324&stx=dentist&csz=Princeton+Junction+NJ"));
+
+        ImageButton yelp = (ImageButton) findViewById(R.id.imageButton_fb);
+        fb.setOnClickListener(new BrowserLauncher("//http://www.yelp.com/biz/vsmile-dental-princeton-junction"));
     }
 
     private String[] createSlotText() {
@@ -110,5 +110,18 @@ public class AppointmentBooking extends Activity {
 
     public View getParentView() {
         return findViewById(R.id.calendarandslots);
+    }
+
+    private class BrowserLauncher implements View.OnClickListener {
+        String URL;
+         BrowserLauncher (String url) {
+            URL = url ;
+        }
+        @Override
+        public void onClick(View view) {
+            Intent browserIntent = new Intent("android.intent.action.VIEW",
+                    Uri.parse(URL));
+            startActivity(browserIntent);
+        }
     }
 }
